@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+
+<title> CSS Advanced</title>
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fleur+De+Leah&family=Italianno&family=Mukta:wght@600&display=swap" rel="stylesheet">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+
+<link rel="stylesheet" href="CSS/style.css"/>
+</head>
+<body>
+    <!-- Navigation section -->
+   <div class="row">
+    <div class="navbar navbar-expand-lg navbar-dark" style="background-color: cadetblue;">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dawa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="e-commerce.html">E-commerce</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link " href="#">Contacts</a></li>
+            
+        </ul>
+        </div>
+        </div>
+    </div>
+</div >
+
+<!-- Carousel wrapper -->
+
+<div class="row">
+    <div class="container">
+    <div
+    id="carouselVideoExample"
+    class="carousel slide carousel-fade"
+    data-mdb-ride="carousel"
+  >
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-mdb-target="#carouselVideoExample"
+        data-mdb-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselVideoExample"
+        data-mdb-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselVideoExample"
+        data-mdb-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+  
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <video class="img-fluid" autoplay loop muted>
+          <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>1.</h5>
+          <p>
+            Байгалийн сайхан хүний сэтгэлд жигүүр ургуулна..
+          </p>
+        </div>
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item">
+        <video class="img-fluid" autoplay loop muted>
+          <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>2.</h5>
+          <p>
+            Ууланд алхах нь сэтгэлийн хүчийг юутай зүйрлэшгүйгээр нэмдэг.. 
+          </p>
+        </div>
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item">
+        <video class="img-fluid" autoplay loop muted>
+          <source
+            src="https://mdbootstrap.com/img/video/Agua-natural.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>3.</h5>
+          <p>
+            Эх сайхан дэлхий бидний гэр..
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+  
+    <!-- Controls -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-mdb-target="#carouselVideoExample"
+      data-mdb-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+</div>
+
+<!-- Carousel wrapper -->
+<!-- Gallery -->
+<div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt=""
+        />
+    
+        <img
+          src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt=""
+        />
+      </div>
+    
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt=""
+        />
+    
+        <img
+          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt=""
+        />
+      </div>
+    
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt=""
+        />
+    
+        <img
+          src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt=""
+        />
+      </div>
+</div>
+<!-- Gallery -->
+
+
+<!-- Footer -->
+<div>
+
+</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
