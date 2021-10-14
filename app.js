@@ -4,6 +4,9 @@ const url = require('url');
 const querystring = require('querystring');
 
 const app = express()
+app.listen(3000, function() {
+  console.log("The server is listening at port 3000");
+})
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -32,7 +35,7 @@ app.get('/', function (req, res) {
 
     console.log(_email, _phone, _subject, _body);
 
-    res.send("Contact information received successfully. Please check your console now.");
+    res.sendFile(__dirname +"/contactsent.html");
     });
 
   app.get('/contact.html', function (req, res) {
@@ -46,7 +49,8 @@ app.get('/', function (req, res) {
   // app.use(express.static(__dirname + '/public'));
   app.use('/CSS', express.static('CSS'));
   app.use('/Images', express.static('Images'));
-   
-app.listen(3000, function() {
-    console.log("The server is listening at port 3000");
-})
+
+  app.use((req, res) => {
+    res.status(404).send('Хуудас олдсонгүй!');
+    }); 
+
