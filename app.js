@@ -2,11 +2,20 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const url = require('url');
 const querystring = require('querystring');
+const mongoose = require('mongoose');
 
 const app = express()
+
+const conStr = "mongodb+srv://dbDawa:12315987@cluster0.pcbbn.mongodb.net/DawaDB?retryWrites=true&w=majority";
 app.listen(3000, function() {
   console.log("The server is listening at port 3000");
 })
+ 
+mongoose.connect(conStr)
+.then((result) =>
+  console.log("Db connection succeeded1"))
+.catch((err) => 
+  console.log("Db connection succeeded1"));
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
